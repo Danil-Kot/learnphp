@@ -7,9 +7,9 @@ use Illuminate\Support\Facades\Route;
 | Web Routes
 |--------------------------------------------------------------------------
 |
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
+| Здесь вы можете зарегистрировать веб-маршруты для своего приложения. Эти
+| маршруты загружаются RouteServiceProvider в группе, которая
+| содержит группу промежуточного программного обеспечения "веб". Теперь создайте что-то великое!
 |
 */
 

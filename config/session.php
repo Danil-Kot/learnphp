@@ -6,7 +6,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Default Session Driver
+    | Default Session Driver | Драйвер сеанса по умолчанию
     |--------------------------------------------------------------------------
     |
     | This option controls the default session "driver" that will be used on
@@ -16,19 +16,28 @@ return [
     | Supported: "file", "cookie", "database", "apc",
     |            "memcached", "redis", "dynamodb", "array"
     |
+    | Эта опция управляет «драйвером» сеанса по умолчанию, который будет использоваться на
+    | Запросы. По умолчанию мы будем использовать облегченный родной драйвер, но
+    | вы можете указать любой из других замечательных драйверов, представленных здесь.
+    |
+    | Поддерживаются: «file», «cookie», «database», «apc»,
+    | «memcached», «redis», «dynamodb», «array»
     */
 
     'driver' => env('SESSION_DRIVER', 'file'),
 
     /*
     |--------------------------------------------------------------------------
-    | Session Lifetime
+    | Session Lifetime | Время жизни сеанса
     |--------------------------------------------------------------------------
     |
     | Here you may specify the number of minutes that you wish the session
     | to be allowed to remain idle before it expires. If you want them
     | to immediately expire on the browser closing, set that option.
     |
+    | Здесь вы можете указать количество минут, которое вы хотите, чтобы сеанс
+    | быть разрешено оставаться бездействующим до истечения срока его действия. Если вы хотите их
+    | для немедленного истечения срока действия при закрытии браузера установите этот параметр.
     */
 
     'lifetime' => env('SESSION_LIFETIME', 120),
